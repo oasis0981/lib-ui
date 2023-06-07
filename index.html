@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <header>
-        <div class="">
-            안녕하세요 도서관입니다.
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>안녕하세요 BIT 도서관입니다.</header>
+    <div class="body">
+      <div class="menu">
+        메뉴
+        <ul>
+          <li>메인</li>
+          <li>세부정보</li>
+        </ul>
+      </div>
+
+      <div class="contents">
+        <div>
+          <label> 회원번호 입력 </label>
+          <input type="text" class="inputUserNumber" />
+          <button>입력</button>
         </div>
-    </header>
-</body>
+        <div class="libInfo">
+          <img src="assets/images/chart.png" />
+          <div>
+            <h2>도서관 정보</h2>
+            <p>대출한 총 권수: <span id="total-loans">0</span></p>
+            <p>대출 이용 회원 수: <span id="total-users">0</span></p>
+            <p>미반납 총 권수: <span id="total-overdue">0</span></p>
+            <p>반납 총 권수: <span id="total-returns">0</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
