@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>도서관 홈페이지</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #F5F5F5;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #1E88E5;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            margin-bottom: 20px;
+        }
+
+        #main-content {
+            margin: 0 auto;
+            max-width: 800px;
+            padding: 20px;
+            background-color: #FFFFFF;
+            border-radius: 4px;
+        }
+
+        #loan-info {
+            margin-bottom: 20px;
+        }
+
+        #loan-info h2 {
+            margin-top: 0;
+        }
+
+        .loan-stats {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .loan-stats-item {
+            flex-basis: 25%;
+            text-align: center;
+        }
+
+        .loan-form {
+            margin-bottom: 20px;
+        }
+
+        .loan-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .loan-form input[type="text"] {
+            width: 100%;
+            padding: 5px;
+        }
+
+        .loan-form input[type="submit"] {
+            background-color: #1E88E5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        .return-form {
+            margin-bottom: 20px;
+        }
+
+        .return-form label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .return-form input[type="submit"] {
+            background-color: #1E88E5;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        #footer {
+            background-color: #1E88E5;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            clear: both;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div id="header">
+    <h1>도서관 홈페이지</h1>
+</div>
+
+<div id="main-content">
+    <div id="loan-info">
+        <h2>대출 정보</h2>
+        <div class="loan-stats">
+            <div class="loan-stats-item">
+                <p>대출한 총 권수: <span id="total-loans">0</span></p>
+            </div>
+            <div class="loan-stats-item">
+                <p>대출 이용 회원 수: <span id="total-users">0</span></p>
+            </div>
+            <div class="loan-stats-item">
+                <p>미반납 총 권수: <span id="total-overdue">0</span></p>
+            </div>
+            <div class="loan-stats-item">
+                <p>반납 총 권수: <span id="total-returns">0</span></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="loan-form">
+        <h2>도서 대출</h2>
+        <form id="loan-form">
+            <label for="user-number">사용자 번호:</label>
+            <input type="text" id="user-number" name="user-number" required>
+            <input type="submit" value="대출하기">
+        </form>
+    </div>
+
+    <div class="return-form">
+        <h2>도서 반납</h2>
+        <form id="return-form">
+            <label for="user-number-return">사용자 번호:</label>
+            <input type="text" id="user-number-return" name="user-number-return" required>
+            <input type="submit" value="반납하기">
+        </form>
+    </div>
+</div>
+
+<div id="footer">
+    <p>도서관 홈페이지에 오신 것을 환영합니다.</p>
+</div>
+
+<script>
+    // 샘플 데이터
+    var totalLoans = 25;
+    var totalUsers = 15;
+    var totalOverdue = 5;
+    var totalReturns = 20;
+
+    // 대출 정보 업데이트 함수
+    function updateLoanInfo() {
+        document.getElementById('total-loans').textContent = totalLoans;
+        document.getElementById('total-users').textContent = totalUsers;
+        document.getElementById('total-overdue').textContent = totalOverdue;
+        document.getElementById('total-returns').textContent = totalReturns;
+    }
+
+    // 대출하기 폼 이벤트 핸들러
+    document.getElementById('loan-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // 폼의 기본 동작 중단
+
+        var userNumber = document.getElementById('user-number').value;
+        // 대출 처리 로직 구현
+
+        totalLoans++; // 샘플 데이터 증가
+        totalUsers++; // 샘플 데이터 증가
+        updateLoanInfo(); // 대출 정보 업데이트
+        document.getElementById('user-number').value = ''; // 입력 필드 초기화
+    });
+
+    // 반납하기 폼 이벤트 핸들러
+    document.getElementById('return-form').addEventListener('submit', function(event) {
+        event.preventDefault(); // 폼의 기본 동작 중단
+
+        var userNumberReturn = document.getElementById('user-number-return').value;
+        // 반납 처리 로직 구현
+
+        totalReturns++; // 샘플 데이터 증가
+        updateLoanInfo(); // 대출 정보 업데이트
+        document.getElementById('user-number-return').value = ''; // 입력 필드 초기화
+    });
+
+    // 초기 대출 정보 업데이트
+    updateLoanInfo();
+</script>
+</body>
+</html>

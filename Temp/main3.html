@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>도서관 관리자 페이지</title>
+    <style>
+        body {
+            background-color: #DCEBF7;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #3C6BA8;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+
+        #menu {
+            float: left;
+            width: 200px;
+            background-color: #A3C1DA;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+
+        #content {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        #footer {
+            background-color: #3C6BA8;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+<div id="header">
+    <h1>도서관 관리자 페이지</h1>
+</div>
+
+<div id="menu">
+    <h3>도서 관리</h3>
+    <form>
+        <label for="bookNumber">도서 번호:</label>
+        <input type="text" id="bookNumber" name="bookNumber">
+        <br>
+        <input type="submit" value="도서 대출">
+        <input type="submit" value="도서 반납">
+    </form>
+</div>
+
+<div id="content">
+    <h2>도서관 통계</h2>
+    <p>도서관 통계 내용이 여기에 표시됩니다.</p>
+</div>
+
+<div id="footer">
+    <p>도서관 관리자 페이지에 오신 것을 환영합니다.</p>
+</div>
+</body>
+
+</html>
