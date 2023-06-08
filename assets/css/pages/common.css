@@ -33,17 +33,10 @@ header>a{
     list-style: none;
 }
 
-.inputUserNumber {
-    margin: 20px;
-    padding: 10px;
-}
-
-.libInfo {
-    display: flex;
-}
-
 .contents {
     padding: 20px;
+    width: 80%;
+    text-align: center;
 }
 
 .menuTabContainer{
@@ -65,9 +58,26 @@ header>a{
 .menuItem{
     flex-grow: 1;
     border-bottom: 1px solid black;
+    font-size: 0.8rem;
+    transition: 0.5s;
+
 }
 
 .active {
     font-weight: bold;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
+}
+
+.menuItem:hover{
+    background-color: #b0ddce6b;
+}
+
+#footer {
+    /* background-color: #0d9c7f81; */
+    border-top: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    clear: both;
+    margin-top: 20px;
 }
