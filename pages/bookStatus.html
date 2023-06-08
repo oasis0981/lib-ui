@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Document</title>
-
   </head>
   <body>
     <header><a href="/index.html">안녕하세요 BIT 도서관입니다.</a></header>
@@ -18,41 +17,57 @@
           <li>세부정보</li>
         </ul>
       </div>
-      <div class="menuTabContainer">
-        <div class="menuTab">
-          <a href="bookStatus.html" class="menuItem active">대출 현황</a>
-          <a href="bookLog.html" class="menuItem">대출 목록</a>
-          <a href="borrow.html" class="menuItem">대출</a>
-          <a href="return.html" class="menuItem">반납</a>
+      <div class="contents">
+        <div class="userInfo">
+          <span class="userName">박중영</span>
+          <span>회원님의 대출정보입니다.</span>
+          <p><span class="userStatus">대출가능</span>(0권/3권 대출중)</p>
         </div>
-        <div>
-          <table style="width:100%">
-            <thead>
-            <th></th>
-              <th>대출 날짜</th>
+        <div class="menuTabContainer">
+          <div class="menuTab">
+            <a href="bookStatus.html" class="menuItem active">대출 현황</a>
+            <a href="bookLog.html" class="menuItem">대출 목록</a>
+            <a href="borrow.html" class="menuItem">대출</a>
+            <a href="return.html" class="menuItem">반납</a>
+          </div>
+          <div>
+            <table style="width: 100%">
+              <thead>
+                <th></th>
+                <th>대출 날짜</th>
                 <th>책 번호</th>
-              <th>책 제목</th>
-              <th>저자</th>
-            </thead>
+                <th>책 제목</th>
+                <th>저자</th>
+              </thead>
 
-            <tbody>
-
-            <tr>
-              <td> <img src="/assets/images/이것이 자바다.jpg" style="width: 8vw; min-width:10px;" /></td>
-              <td>2023-06-08~2023-06-14</td>
-                <td>1234</td>
-              <td>이것이 자바다</td>
-              <td>신용권</td>
-            </tr>
-            <tr style="color: red">
-              <td> <img src="/assets/images/이것이 자바다.jpg" style="width: 8vw; min-width: 10px;" /></td>
-            <td>2023-05-08~2023-05-14</td>
-                <td>1234</td>
-            <td>이것이 자바다</td>
-            <td>신용권</td>
-            </tr>
-            </tbody>
-          </table>
+              <tbody>
+                <tr>
+                  <td>
+                    <img
+                      src="/assets/images/이것이 자바다.jpg"
+                      style="width: 8vw; min-width: 10px"
+                    />
+                  </td>
+                  <td>2023-06-08~2023-06-14</td>
+                  <td>1234</td>
+                  <td>이것이 자바다</td>
+                  <td>신용권</td>
+                </tr>
+                <tr style="color: red">
+                  <td>
+                    <img
+                      src="/assets/images/이것이 자바다.jpg"
+                      style="width: 8vw; min-width: 10px"
+                    />
+                  </td>
+                  <td>2023-05-08~2023-05-14</td>
+                  <td>1234</td>
+                  <td>이것이 자바다</td>
+                  <td>신용권</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>

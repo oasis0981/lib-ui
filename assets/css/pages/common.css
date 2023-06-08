@@ -1,83 +1,100 @@
 header {
-    font-size: 1.5rem;
-    padding: 90px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-weight: 600;
-    border-bottom: 1px solid black;
+  font-size: 1.5rem;
+  padding: 90px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 600;
+  border-bottom: 1px solid black;
 }
 
-header>a{
-    text-decoration: none;
-    color: black;
+header > a {
+  text-decoration: none;
+  color: black;
 }
 
 .body {
-    display: flex;   
+  display: flex;
 }
 
 .menu {
-    padding: 20px 60px 20px 20px;
-    border-right: 1px solid black;
-    height: 100vh;
-    width: 15%;
+  padding: 20px 60px 20px 20px;
+  border-right: 1px solid black;
+  height: 100vh;
+  width: 15%;
 }
 
-.menu>ul{
-    padding-left: 0;
+.menu > ul {
+  padding-left: 0;
 }
 
-.menu>ul>li{
-    list-style: none;
+.menu > ul > li {
+  list-style: none;
 }
 
 .contents {
-    padding: 20px;
-    width: 80%;
-    text-align: center;
+  padding: 20px;
+  width: 80%;
 }
 
-.menuTabContainer{
-    width: 100%;
+.menuTabContainer {
+  width: 100%;
+  text-align: center;
 }
 
-.menuTab{
-    display: flex;
-    height: 70px;
-    text-align: center;
-    line-height: 70px;
+.menuTab {
+  display: flex;
+  height: 70px;
+  text-align: center;
+  line-height: 70px;
 }
 
-.menuTab>a{
-    color: #000;
-    text-decoration: none;
+.menuTab > a {
+  color: #000;
+  text-decoration: none;
 }
 
-.menuItem{
-    flex-grow: 1;
-    border-bottom: 1px solid black;
-    font-size: 0.8rem;
-    transition: 0.5s;
-
+.menuItem {
+  flex-grow: 1;
+  border-bottom: 1px solid black;
+  font-size: 1rem;
 }
 
 .active {
-    font-weight: bold;
-    border-bottom: 2px solid black;
+  font-weight: bold;
+  border-bottom: 2px solid #1c6e53e0;
+  background-color: #9edbc786;
 }
 
-.menuItem:hover{
-    background-color: #b0ddce6b;
+.menuItem:hover {
+  background-color: #b0ddce6b;
 }
 
 #footer {
-    /* background-color: #0d9c7f81; */
-    border-top: 1px solid black;
-    padding: 20px;
-    text-align: center;
-    color: black;
-    clear: both;
-    margin-top: 20px;
+  /* background-color: #0d9c7f81; */
+  border-top: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  color: black;
+  clear: both;
+  margin-top: 20px;
+}
+
+.userInfo {
+  margin: 20px 0px 0px 0px;
+  padding: 20px 0px 50px 0px;
+  text-align: center;
+  border-bottom: 1px #aaaaaa solid;
+}
+
+.userInfo > .userName {
+  font-weight: bold;
+  color: #03705a;
+  font-size: 1.1rem;
+}
+
+.userStatus {
+  color: rgb(88, 88, 182);
+  font-weight: bold;
 }
