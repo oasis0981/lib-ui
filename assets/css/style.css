@@ -47,14 +47,17 @@ header>a{
 }
 
 .menuTab{
-    display: flex;
     width: 100%;
+    
+}
+.menuTab>div{
+    display: flex;
     height: 70px;
     text-align: center;
     line-height: 70px;
 }
 
-.menuTab>a{
+.menuTab>div>a{
     color: #000;
     text-decoration: none;
 }
