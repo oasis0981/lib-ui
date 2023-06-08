@@ -1,15 +1,20 @@
+
+
 .mainHeader {
     width:100%;
     display: flex;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
+
 
 .inputContainer {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     width: 40%;
-    margin-left: 50px;
+    margin: 20px;
     position: relative;
 }
 
@@ -59,7 +64,7 @@
 }
 
 .inputUserNumber:focus ~ label, .inputUserNumber:valid ~ label {
-    font-size: 1rem;
+    font-size: 0.5rem;
     bottom: 100%;
     color: #666;
     font-weight: bold;
@@ -68,4 +73,33 @@
 .inputUserNumber:focus ~ span, .inputUserNumber:valid ~ span {
     width: 100%;
 }
-    
+
+.w-btn {
+    border: none;
+    padding: 15px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.25s;
+}
+
+.w-btn-green {
+    background-color: transparent;
+    color: #757575;
+}
+
+.w-btn:hover {
+    /* transform: scale(1.2); */
+    background-color: #a8d3c58c;
+    cursor: pointer;
+}
+
+.libInfo {
+    display: flex;
+    justify-content: center;
+}
+
+.mainNotice {
+    font-size: 0.8rem;
+}

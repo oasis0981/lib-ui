@@ -33,13 +33,10 @@ header>a{
     list-style: none;
 }
 
-.libInfo {
-    display: flex;
-}
-
 .contents {
     padding: 20px;
     width: 80%;
+    text-align: center;
 }
 
 .menuTabContainer{
@@ -61,11 +58,18 @@ header>a{
 .menuItem{
     flex-grow: 1;
     border-bottom: 1px solid black;
+    font-size: 0.8rem;
+    transition: 0.5s;
+
 }
 
 .active {
     font-weight: bold;
-    border-bottom: 3px solid black;
+    border-bottom: 2px solid black;
+}
+
+.menuItem:hover{
+    background-color: #b0ddce6b;
 }
 
 #footer {
