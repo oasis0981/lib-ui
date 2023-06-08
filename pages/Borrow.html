@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header><a href="/index.html">안녕하세요 BIT 도서관입니다.</a></header>
-    <div class="body">
-      <div class="menu">
-        메뉴
-        <ul>
-          <li>메인</li>
-          <li>세부정보</li>
-        </ul>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <header><a href="/index.html">안녕하세요 BIT 도서관입니다.</a></header>
+  <div class="body">
+    <div class="menu">
+      메뉴
+      <ul>
+        <li>메인</li>
+        <li>세부정보</li>
+      </ul>
+    </div>
+    <div class="menuTabContainer">
+      <div class="menuTab">
+        <a href="bookStatus.html" class="menuItem">대출 현황</a>
+        <a href="bookLog.html" class="menuItem">대출 목록</a>
+        <a href="borrow.html" class="menuItem active">대출</a>
+        <a href="return.html" class="menuItem">반납</a>
       </div>
-      <div class="menuTabContainer">
-        <div class="menuTab">
-          <a href="bookStatus.html" class="menuItem">대출 현황</a>
-          <a href="bookLog.html" class="menuItem">대출 목록</a>
-          <a href="borrow.html" class="menuItem active">대출</a>
-          <a href="return.html" class="menuItem">반납</a>
-        </div>
-        <div>
-          <!--여기서 작업-->
-          <div class="content">
-            <div class="loanForm">
+      <div>
+        <!--여기서 작업-->
+        <div class="container">
+          <div class="loanContainer">
+            <div class="content">
                 <h2>도서 대출</h2>
                 <form>
-                    <input class="bookNumber" type="text" placeholder="도서번호 입력 란" required>
-                    <button class="bookSubmit">입력</button>
-                    <button class="borrowBook">대출</button>
+                  <input class="bookNumber" type="text" placeholder="도서번호 입력 란" required>
+                  <button class="bookSubmit">입력</button>
+                  <button class="borrowBook">대출</button>
                 </form>
             </div>
-            <div id="bookList">
+            <div class="bookList">
               <table class="bookListTable">
                 <thead>
                   <tr>
-                      <th value="">도서</th>
-                      <th value="">도서 이름</th>
-                      <th value="">저자</th>
-                      <th value="">출판사</th>
-                      <th value="">잔여수량</th>
+                    <th>도서</th>
+                    <th>도서 이름</th>
+                    <th>저자</th>
+                    <th>출판사</th>
+                    <th>잔여수량</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -59,9 +62,20 @@
                 </tbody>
               </table>
             </div>
-        </div>
+          </div>
+
+          <div class="additionalTextBoxContainer">
+            <h2>대출 현황</h2>
+            <div class="additionalTextBox ">
+              <ul>
+                <li>이것이 자바다</li>
+                <li>SQL 쿡북</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+</body>
+
 </html>

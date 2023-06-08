@@ -1,12 +1,21 @@
-.loanForm,
-.returnForm {
-    margin-bottom: 20px;
+.container {
+    display: flex;
 }
-.bookNumber{
-    width: 500px;
+
+.loanContainer {
+    flex-grow: 2;
+}
+
+.content {
+    width: 100%;
+}
+
+.bookNumber {
+    width: 50%;
     height: 40px;
 }
-.bookSubmit{
+
+.bookSubmit {
     color: #1E88E5;
     background-color: skyblue;
     color: white;
@@ -14,7 +23,8 @@
     padding: 10px 30px;
     font-size: 20px;
 }
-.borrowBook{
+
+.borrowBook {
     color: #1E88E5;
     background-color: rgb(248, 79, 79);
     color: white;
@@ -22,16 +32,17 @@
     padding: 10px 30px;
     font-size: 20px;
 }
-.loanStatus{
-float : left;
+
+.loanStatus {
+    float: left;
 }
 
 .bookList {
-    width: 100%;
+    width: 90%;
     padding: 10px;
 }
 
-.bookListTable{
+.bookListTable {
     width: 100%;
     text-align: center;
 
@@ -43,13 +54,14 @@ float : left;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
-.bookListTable thead{
+.bookListTable thead {
     background-color: #009879;
     color: #ffffff;
     text-align: center;
 }
 
-.bookListTable th, td{
+.bookListTable th,
+td {
     padding: 12px 15px;
 }
 
@@ -65,8 +77,21 @@ float : left;
     border-bottom: 2px solid #009879;
 }
 
-.bookImg{
+.bookImg {
     width: 40px;
     height: auto;
     margin-right: 15px;
+}
+
+.additionalTextBoxContainer {
+    justify-content: flex-end;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.additionalTextBox {
+    width: 80%;
+    height: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
 }
