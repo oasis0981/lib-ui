@@ -32,12 +32,33 @@
                 <form>
                     <label for="book-number"></label>
                     <input type="text" placeholder="도서번호 입력 란" id="book-number" name="book-number" required>
-                    <input type="submit" id="book-submit" value="입력">
-                    <input type="button" id="return-book" value="반납">
+                    <button id="book-submit">입력</button>
+                    <button id="return-book">대출</button>
                 </form>
             </div>
             <div id="loan-status">
-
+              <table>
+                <thead>
+                  <tr>
+                      <th value="bookImg">도서</th>
+                      <th value="bookName">도서 이름</th>
+                      <th value="bookAuthor">저자</th>
+                      <th value="bookPublisher">출판사</th>
+                      <th value="bookRemain">잔여수량</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <img src="/assets/images/이것이 자바다.jpg" alt="">
+                    </td>
+                    <td>이것이 자바다</td>
+                    <td>신용권, 임경균 저</td>
+                    <td>한빛미디어</td>
+                    <td>수량 : 2</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
         </div>
         </div>
