@@ -1,6 +1,7 @@
 #loan-form,
 #return-form {
     margin-bottom: 20px;
+    float : left;
 }
 #book-number{
     width: 500px;
@@ -8,7 +9,7 @@
 }
 #book-submit{
     color: #1E88E5;
-    background-color: skyblue;
+    background-color: #009879;
     color: white;
     border: none;
     padding: 10px 30px;
@@ -23,5 +24,4 @@
     font-size: 20px;
 }
 #loan-status{
-float : left;
 }
