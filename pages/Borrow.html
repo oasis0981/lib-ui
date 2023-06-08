@@ -19,63 +19,71 @@
         <li>세부정보</li>
       </ul>
     </div>
-    <div class="menuTabContainer">
-      <div class="menuTab">
-        <a href="bookStatus.html" class="menuItem">대출 현황</a>
-        <a href="bookLog.html" class="menuItem">대출 목록</a>
-        <a href="borrow.html" class="menuItem active">대출</a>
-        <a href="return.html" class="menuItem">반납</a>
+    <div class="contents">
+      <div class="userInfo">
+        <span class="userName">박중영</span>
+        <span>회원님의 대출정보입니다.</span>
+        <p><span class="userStatus">대출가능</span>(0권/3권 대출중)</p>
       </div>
-      <div>
-        <!--여기서 작업-->
-        <div class="container">
-          <div class="loanContainer">
-            <div class="content">
-                <h2>도서 대출</h2>
-                <form>
-                  <input class="bookNumber" type="text" placeholder="도서번호 입력 란" required>
-                  <button class="bookSubmit">입력</button>
-                  <button class="borrowBook">대출</button>
-                </form>
+      <div class="menuTabContainer">
+        <div class="menuTab">
+          <a href="bookStatus.html" class="menuItem">대출 현황</a>
+          <a href="bookLog.html" class="menuItem">대출 목록</a>
+          <a href="borrow.html" class="menuItem active">대출</a>
+          <a href="return.html" class="menuItem">반납</a>
+        </div>
+        <div>
+          <!--여기서 작업-->
+          <div class="container">
+            <div class="loanContainer">
+              <div class="content">
+                  <h2>도서 대출</h2>
+                  <form>
+                    <input class="bookNumber" type="text" placeholder="도서번호 입력 란" required>
+                    <button class="bookSubmit">입력</button>
+                    <button class="borrowBook">대출</button>
+                  </form>
+              </div>
+              <div class="bookList">
+                <table class="bookListTable">
+                  <thead>
+                    <tr>
+                      <th>도서</th>
+                      <th>도서 이름</th>
+                      <th>저자</th>
+                      <th>출판사</th>
+                      <th>잔여수량</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>
+                        <img class="bookImg" src="/assets/images/이것이 자바다.jpg" alt="">
+                      </td>
+                      <td>이것이 자바다</td>
+                      <td>신용권, 임경균 저</td>
+                      <td>한빛미디어</td>
+                      <td>수량 : 2</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
-            <div class="bookList">
-              <table class="bookListTable">
-                <thead>
-                  <tr>
-                    <th>도서</th>
-                    <th>도서 이름</th>
-                    <th>저자</th>
-                    <th>출판사</th>
-                    <th>잔여수량</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>
-                      <img class="bookImg" src="/assets/images/이것이 자바다.jpg" alt="">
-                    </td>
-                    <td>이것이 자바다</td>
-                    <td>신용권, 임경균 저</td>
-                    <td>한빛미디어</td>
-                    <td>수량 : 2</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-          <div class="additionalTextBoxContainer">
-            <h2>대출 현황</h2>
-            <div class="additionalTextBox ">
-              <ul>
-                <li>이것이 자바다</li>
-                <li>SQL 쿡북</li>
-              </ul>
+  
+            <div class="additionalTextBoxContainer">
+              <h2>대출 현황</h2>
+              <div class="additionalTextBox ">
+                <ul>
+                  <li>이것이 자바다</li>
+                  <li>SQL 쿡북</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    
 </body>
 
 </html>
