@@ -1,0 +1,79 @@
+header {
+    font-size: 1.5rem;
+    padding: 90px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+}
+
+header>a{
+    text-decoration: none;
+    color: black;
+}
+
+.body {
+    display: flex;   
+}
+
+.menu {
+    padding: 20px 60px 20px 20px;
+    border-right: 1px solid black;
+    height: 100vh;
+    width: 15%;
+}
+
+.menu>ul{
+    padding-left: 0;
+}
+
+.menu>ul>li{
+    list-style: none;
+}
+
+.libInfo {
+    display: flex;
+}
+
+.contents {
+    padding: 20px;
+    width: 80%;
+}
+
+.menuTabContainer{
+    width: 100%;
+}
+
+.menuTab{
+    display: flex;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.menuTab>a{
+    color: #000;
+    text-decoration: none;
+}
+
+.menuItem{
+    flex-grow: 1;
+    border-bottom: 1px solid black;
+}
+
+.active {
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+
+#footer {
+    /* background-color: #0d9c7f81; */
+    border-top: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    color: black;
+    clear: both;
+    margin-top: 20px;
+}
