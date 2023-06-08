@@ -69,3 +69,6 @@ header>a{
     border-bottom: 3px solid black;
 }
 @import url(./pages/bookStatus.css);
+@import url(./pages/bookLog.css);
+@import url(./pages/borrow.css);
+@import url(./pages/return.css);
