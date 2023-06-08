@@ -1,4 +1,4 @@
-h2 {
+.borrowH2 {
     width: 85%;
 }
 
@@ -43,7 +43,6 @@ h2 {
 
 .bookList {
     width: 90%;
-    padding: 10px;
 }
 
 .bookListTable {
