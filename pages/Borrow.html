@@ -26,31 +26,30 @@
         </div>
         <div>
           <!--여기서 작업-->
-          <div id="content">
-            <div id="loan-form">
+          <div class="content">
+            <div class="loanForm">
                 <h2>도서 대출</h2>
                 <form>
-                    <label for="book-number"></label>
-                    <input type="text" placeholder="도서번호 입력 란" id="book-number" name="book-number" required>
-                    <button id="book-submit">입력</button>
-                    <button id="return-book">대출</button>
+                    <input class="bookNumber" type="text" placeholder="도서번호 입력 란" required>
+                    <button class="bookSubmit">입력</button>
+                    <button class="borrowBook">대출</button>
                 </form>
             </div>
-            <div id="loan-status">
-              <table>
+            <div id="bookList">
+              <table class="bookListTable">
                 <thead>
                   <tr>
-                      <th value="bookImg">도서</th>
-                      <th value="bookName">도서 이름</th>
-                      <th value="bookAuthor">저자</th>
-                      <th value="bookPublisher">출판사</th>
-                      <th value="bookRemain">잔여수량</th>
+                      <th value="">도서</th>
+                      <th value="">도서 이름</th>
+                      <th value="">저자</th>
+                      <th value="">출판사</th>
+                      <th value="">잔여수량</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
                     <td>
-                      <img src="/assets/images/이것이 자바다.jpg" alt="">
+                      <img class="bookImg" src="/assets/images/이것이 자바다.jpg" alt="">
                     </td>
                     <td>이것이 자바다</td>
                     <td>신용권, 임경균 저</td>
