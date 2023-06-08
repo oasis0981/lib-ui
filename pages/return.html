@@ -28,16 +28,17 @@
           <!--여기서 작업-->
           <div id="content">
             <div id="loanForm">
+              <div>
                 <h2>도서 반납</h2>
-                <div id="dynamicinput">
-                <form>
+                <form id ="booknuminput">
+                  <div id="dynamicinput">
                     <input type="text" id="book-number" name="book-number" required>
                     <label id="dynamicinputlable">도서번호 입력 란</label>
                     <span id="dynamicsapn"></span>
+                  </div>
                     <input type="submit" id="book-submit" value="입력">
                     <input type="button" id="returnBook" value="반납">
                 </form>
-              </div>
                 <table class="retrunStack">
                   <colgroup>
                   <col style="width: 8%">
@@ -106,6 +107,7 @@
                     </tr>
                   </tbody>
                   </table>
+                </div>
             </div>
             <div id="loan-status">
               <h2>반납 현황</h2>
