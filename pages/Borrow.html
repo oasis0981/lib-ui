@@ -17,16 +17,29 @@
           <li>세부정보</li>
         </ul>
       </div>
-      <div class="menuTab">
-        <div>
+      <div class="menuTabContainer">
+        <div class="menuTab">
           <a href="bookStatus.html" class="menuItem">대출 현황</a>
           <a href="bookLog.html" class="menuItem">대출 목록</a>
           <a href="borrow.html" class="menuItem active">대출</a>
           <a href="return.html" class="menuItem">반납</a>
         </div>
         <div>
-          ㅎㅇ
           <!--여기서 작업-->
+          <div id="content">
+            <div id="loan-form">
+                <h2>도서 대출</h2>
+                <form>
+                    <label for="book-number"></label>
+                    <input type="text" placeholder="도서번호 입력 란" id="book-number" name="book-number" required>
+                    <input type="submit" id="book-submit" value="입력">
+                    <input type="button" id="return-book" value="반납">
+                </form>
+            </div>
+            <div id="loan-status">
+
+            </div>
+        </div>
         </div>
       </div>
     </div>
