@@ -10,15 +10,16 @@
 }
 #book-number{
     font-size: 15px;
-  color: #222222;
-  width: 500px;
-  border: none;
-  border-bottom: solid #aaaaaa 1px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  position: relative;
-  background: none;
-  z-index: 5;
+    color: #222222;
+    width: 70;
+    border: none;
+    border-bottom: solid #aaaaaa 1px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    position: relative;
+    background: none;
+    z-index: 5;
+    
 }
 #book-submit{
     color: #1E88E5;
@@ -27,6 +28,7 @@
     border: none;
     padding: 10px 30px;
     font-size: 20px;
+    
 }
 #returnBook{
     color: #1E88E5;
@@ -74,6 +76,7 @@ table{
   width: 70%;
   margin-left: 50px;
   margin-top: 150px;
+  margin-right: 10%;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
