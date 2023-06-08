@@ -9,6 +9,11 @@ header {
     border-bottom: 1px solid black;
 }
 
+header>a{
+    text-decoration: none;
+    color: black;
+}
+
 .body {
     display: flex;   
 }
@@ -16,6 +21,16 @@ header {
 .menu {
     padding: 20px 60px 20px 20px;
     border-right: 1px solid black;
+    height: 100vh;
+    width: 15%;
+}
+
+.menu>ul{
+    padding-left: 0;
+}
+
+.menu>ul>li{
+    list-style: none;
 }
 
 .inputUserNumber {
@@ -30,3 +45,27 @@ header {
 .contents {
     padding: 20px;
 }
+
+.menuTab{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    line-height: 70px;
+}
+
+.menuTab>a{
+    color: #000;
+    text-decoration: none;
+}
+
+.menuItem{
+    flex-grow: 1;
+    border-bottom: 1px solid black;
+}
+
+.active {
+    font-weight: bold;
+    border-bottom: 3px solid black;
+}
+@import url(./pages/bookStatus.css);
