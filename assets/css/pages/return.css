@@ -1,7 +1,13 @@
 table{
   text-align: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+  border-spacing: 0cm;
+  }
 }
 .retrunStack{
+  border-spacing: 0cm;
+}
+#borrowStat{
   border-spacing: 0cm;
 }
 tbody{
@@ -31,21 +37,37 @@ form {
   border: none;
   border-bottom: solid #aaaaaa 2px;
   background: none;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  transition: border-bottom-color 0.3s ease-in-out;
 }
 #book-submit {
-  color: #1e88e5;
   background-color: #009879;
-  color: white;
   border: none;
-  padding: 10px 30px;
-  font-size: 20px;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 #returnBook {
-  background-color: rgb(248, 79, 79);
-  color: white;
+  background-color: #cf3910;
   border: none;
-  padding: 10px 30px;
-  font-size: 20px;
+  color: white;
+  padding: 12px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 th {
   padding: 10px;
@@ -72,5 +94,16 @@ td {
   margin: 0 auto;
 }
 #bookReturn{
-  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+#returnBook:hover {
+  background-color: #aa2e0b;
+}
+#book-submit:hover {
+  background-color: #006752;
+}
+#book-number:focus {
+  outline: none;
+  border-bottom-color: #009879;
 }
