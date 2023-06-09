@@ -39,7 +39,7 @@
               <div class="content">
                   <h2 class="borrowH2">도서 대출</h2>
                   <form>
-                    <input class="bookNumber" type="text" placeholder="도서번호 입력 란" required>
+                    <input class="loanBookNumber" type="text" placeholder="도서번호 입력 란" required>
                     <button class="bookSubmit">입력</button>
                     <button class="borrowBook">대출</button>
                   </form>
@@ -79,20 +79,32 @@
             <div class="loanBookBoxContainer">
               <h2 class="borrowH2">대출 현황</h2>
               <div class="loanBookBox ">
-                <ul>
-                  <li>
-                    <span class="book">이것이 자바다</span>
-                    <span class="due-date">2023년 6월 15일까지</span>
-                  </li>
-                  <li>
-                    <span class="book">SQL 쿡북</span>
-                    <span class="due-date">2023년 6월 20일까지</span>
-                  </li>
-                  <li>
-                    <span class="book">업무에 바로 쓰는 SQL 튜닝</span>
-                    <span class="due-date">2023년 6월 25일까지</span>
-                  </li>
-                </ul>
+                <table class="loanBookTable">
+                  <thead>
+                    <th>도서번호</th>
+                    <th>도서이름</th>
+                    <th>저자</th>
+                    <th>반납일자</th>
+                  </thead>
+                  <tbody>
+                    <td>123456</td>
+                    <td>이것이 자바다</td>
+                    <td>신용권, 임경균 저</td>
+                    <td>2023-06-15</td>
+                  </tbody>
+                  <tbody>
+                    <td>123457</td>
+                    <td>SQL 쿡북</td>
+                    <td>엔서니 몰리나로, 로버트 더그래프</td>
+                    <td>2023-06-20</td>
+                  </tbody>
+                  <tbody>
+                    <td>123458</td>
+                    <td>업무에 바로 쓰는 SQL 튜닝</td>
+                    <td>양바른</td>
+                    <td>2023-06-15</td>
+                  </tbody>
+                </table>
               </div>
             </div>
           </div>
