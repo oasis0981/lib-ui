@@ -13,10 +13,11 @@
   padding: 5px;
   margin: 10px 0px;
   text-align: center;
+  height: 30px;
 }
 
 .overdueSort > input :focus {
-  outline: none !important;
+  outline: none;
 }
 
 .overdueSort::placeholder {
