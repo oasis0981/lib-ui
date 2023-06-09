@@ -1,3 +1,13 @@
+table{
+  text-align: center;
+}
+.retrunStack{
+  border-spacing: 0cm;
+}
+tbody{
+  width: 100%;
+  
+}
 #loanForm {
   margin-bottom: 20px;
   margin-right: 30px;
@@ -17,14 +27,10 @@ form {
 #book-number {
   font-size: 20px;
   color: #222222;
-  width: 60%;
+  width: 80%;
   border: none;
-  border-bottom: solid #aaaaaa 1px;
-  padding-bottom: 20px;
-  padding-left: 10px;
-  position: relative;
+  border-bottom: solid #aaaaaa 2px;
   background: none;
-  z-index: 5;
 }
 #book-submit {
   color: #1e88e5;
@@ -35,15 +41,11 @@ form {
   font-size: 20px;
 }
 #returnBook {
-  color: #1e88e5;
   background-color: rgb(248, 79, 79);
   color: white;
   border: none;
   padding: 10px 30px;
   font-size: 20px;
-}
-#borrowStat {
-  border-collapse: collapse;
 }
 th {
   padding: 10px;
@@ -51,7 +53,7 @@ th {
   color: #fff;
 }
 td {
-  background-color: #fff;
+  background-color: #b1b1b222;
   border-color: #aaa;
   border-width: 1px;
   color: #333;
@@ -64,65 +66,11 @@ td {
   width: 100px;
   height: auto;
 }
-#returnStack {
-  width: 60%;
-  table-layout: fixed;
-}
-table {
-  text-align: center;
-}
-#cancle {
-  width: 50px;
-}
-
-#dynamicinput {
-  position: relative;
-  width: 60%;
-  margin-left: 50px;
-  margin-top: 150px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  float: left;
-}
-
-#book-number::placeholder {
-  color: #aaaaaa;
-}
-#book-number:focus {
-  outline: none;
-}
-
-#dynamicsapn {
+#cancle{
+  width: 30px;
   display: block;
-  position: absolute;
-  bottom: 0;
-  left: 0%; /* right로만 바꿔주면 오 - 왼 */
-  background-color: #666;
-  width: 0;
-  height: 2px;
-  border-radius: 2px;
-  transition: 0.5s;
+  margin: 0 auto;
 }
-#dynamicinputlable {
-  position: absolute;
-  color: #aaa;
-  left: 10px;
-  font-size: 20px;
-  bottom: 8px;
-  transition: all 0.2s;
-}
-#book-number:focus ~ #dynamicinputlable,
-#book-number:valid ~ #dynamicinputlable {
-  font-size: 15px;
-  bottom: 40px;
-  color: #666;
-  font-weight: bold;
-}
-
-#book-number:focus ~ #dynamicsapn,
-#book-number:valid ~ #dynamicsapn {
-  width: 100%;
-}
-#buttons {
+#bookReturn{
+  overflow: hidden;
 }
