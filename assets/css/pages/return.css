@@ -53,7 +53,7 @@ form {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 #returnBook {
   background-color: #cf3910;
@@ -67,7 +67,7 @@ form {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 4px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 th {
   padding: 10px;
@@ -99,9 +99,11 @@ td {
 
 #returnBook:hover {
   background-color: #aa2e0b;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 #book-submit:hover {
   background-color: #006752;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 #book-number:focus {
   outline: none;
