@@ -16,8 +16,19 @@
   height: 30px;
 }
 
-.overdueSort > input :focus {
+.overdueSort input[type="text"] {
+  border: none;
+  border-bottom: 2px solid #ccc;
+  background-color: transparent;
+  color: #333;
+  padding: 8px;
+  font-size: 16px;
+  transition: border-bottom-color 0.3s ease-in-out;
+}
+
+.overdueSort input[type="text"]:focus {
   outline: none;
+  border-bottom-color: #009879;
 }
 
 .overdueSort::placeholder {
