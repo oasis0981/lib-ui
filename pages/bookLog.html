@@ -12,10 +12,10 @@
     <header><a href="/index.html">안녕하세요 BIT 도서관입니다.</a></header>
     <div class="body">
       <div class="menu">
-        메뉴
+        <p class="title">menu</p>
         <ul>
-          <li>메인</li>
-          <li>세부정보</li>
+          <a href="/index.html"/><li>메인</li></a>
+          <a href="/pages/lateBooks.html"><li>미반납도서<span style="font-size: 0.8rem;">(연체도서)</span></li></a>
         </ul>
       </div>
       <div class="contents">
@@ -37,8 +37,9 @@
               <table class="loans_list_table">
                 <thead>
                   <tr>
-                    <th value="book_no">도서 번호</th>
-                    <th value="book_name">도서 이름</th>
+                    <th value="bookLog_no">No.</th>
+                    <th value="book_no">책 번호</th>
+                    <th value="book_name">책 이름</th>
                     <th value="author">저자</th>
                     <th value="created_at">대출 일자</th>
                     <th value="end_date_at">반납 일자</th>
@@ -48,6 +49,7 @@
                 <tbody>
                   <tr class="active_row">
                     <td>1</td>
+                    <td>1234</td>
                     <td class="loans_book_info">
                       <img
                         src="../assets/images/이것이 자바다.jpg"
