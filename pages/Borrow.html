@@ -28,7 +28,8 @@
       <div class="userInfo">
         <span class="userName">박중영</span>
         <span>회원님의 대출정보입니다.</span>
-        <p><span class="userStatus">대출가능</span>(0권/3권 대출중)</p>
+        <p><span class="userStatus">대출불가능</span>(3권/3권 대출중)</p>
+        <!-- <span class="userStatus">이 회원은 대출이 불가능 합니다.</span> -->
       </div>
       <div class="menuTabContainer">
         <div class="menuTab">
@@ -46,10 +47,10 @@
                 <form>
                   <input class="loanBookNumber" type="text" placeholder="도서번호 입력 란" required>
                   <input type="submit" class="bookSubmit" value="입력" />
-                  <input type="button" class="borrowBook" value="반납" />
+                  <input type="button" class="borrowBook" value="대출" />
                 </form>
               </div>
-              <table class="bookListTable">
+              <!-- <table class="bookListTable">
                 <colgroup>
                   <col style="width: 8%" />
                   <col style="width: 11%" />
@@ -87,7 +88,7 @@
                     </td>
                   </tr>
                 </tbody>
-              </table>
+              </table> -->
             </div>
 
             <div class="BorrowStatus">
@@ -110,12 +111,6 @@
                     </thead>
                     <tbody>
                       <tr>
-                        <td>123456</td>
-                        <td>이것이 자바다</td>
-                        <td>신용권, 임경균 저</td>
-                        <td>2023-06-15</td>
-                      </tr>
-                      <tr>
                         <td>123457</td>
                         <td>SQL 쿡북</td>
                         <td>엔서니 몰리나로, 로버트 더그래프</td>
@@ -125,6 +120,12 @@
                       <td>업무에 바로 쓰는 SQL 튜닝</td>
                       <td>양바른</td>
                       <td>2023-06-15</td>
+                      <tr>
+                        <td>123456</td>
+                        <td>이것이 자바다</td>
+                        <td>신용권, 임경균 저</td>
+                        <td>2023-06-15</td>
+                      </tr>
                     </tbody>
                   </table>
               </form>
