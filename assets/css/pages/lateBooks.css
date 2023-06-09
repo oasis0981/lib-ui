@@ -1,0 +1,24 @@
+.overdue {
+  margin: 0;
+}
+
+.overdueSort {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.overdueSort > input {
+  border: 0;
+  border-bottom: 1px solid #aaa;
+  padding: 5px;
+  margin: 10px 0px;
+  text-align: center;
+}
+
+.overdueSort > input :focus {
+  outline: none !important;
+}
+
+.overdueSort::placeholder {
+  color: #aaaaaa;
+}

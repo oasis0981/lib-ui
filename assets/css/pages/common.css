@@ -21,7 +21,7 @@ header > a {
 .menu {
   padding: 20px 60px 20px 20px;
   border-right: 1px solid rgb(190, 190, 190);
-  height: 100vh;
+  height: unset;
   width: 15%;
 }
 
@@ -74,12 +74,9 @@ header > a {
   line-height: 70px;
 }
 
-.menuTab > a {
+.menuItem {
   color: #000;
   text-decoration: none;
-}
-
-.menuItem {
   flex-grow: 1;
   border-bottom: 1px solid black;
   font-size: 1rem;
@@ -93,11 +90,13 @@ header > a {
 
 .menuItem:hover {
   background-color: #b0ddce6b;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 
 #footer {
   /* background-color: #0d9c7f81; */
-  border-top: 1px solid black;
+  border-top: 1px solid rgb(190, 190, 190);
   padding: 20px;
   text-align: center;
   color: black;
