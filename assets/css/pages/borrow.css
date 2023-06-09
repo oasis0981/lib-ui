@@ -29,27 +29,43 @@
 .loanBookNumber {
     font-size: 20px;
     color: #222222;
-    height: auto;
+    width: 80%;
     border: none;
     border-bottom: solid #aaaaaa 2px;
     background: none;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    transition: border-bottom-color 0.3s ease-in-out;
 }
 
 .bookSubmit {
-    color: #1e88e5;
     background-color: #009879;
-    color: white;
     border: none;
-    padding: 10px 30px;
-    font-size: 20px;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .borrowBook {
-    background-color: rgb(248, 79, 79);
-    color: white;
+    background-color: #cf3910;
     border: none;
-    padding: 10px 30px;
-    font-size: 20px;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 .loanStatus {
