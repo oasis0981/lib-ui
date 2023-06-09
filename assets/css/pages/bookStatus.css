@@ -1,6 +1,3 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Orbit&display=swap');
-
-  .font {
-    font-family: 'Orbit', sans-serif;
-  }
+.overDue td {
+    color: red;
+}
