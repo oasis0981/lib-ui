@@ -18,12 +18,11 @@
 
 .content {
     width: 100%;
-    height: auto;
+    margin-bottom: 10px;
 }
 
 .loanBookNumberForm {
     display: flex;
-    justify-content: space-between;
 }
 
 .loanBookNumber {
