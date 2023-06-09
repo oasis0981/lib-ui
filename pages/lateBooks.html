@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <script src="https://kit.fontawesome.com/2f6b4dfe18.js" crossorigin="anonymous"></script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/style.css" />
@@ -28,7 +29,17 @@
           반납기간이 지나 연체된 도서의 전체 목록입니다.
         </div>
         <div class="overdueSort">
-          <input type="text" placeholder="회원번호로 검색" required />
+          <div id="dropdownlate">
+            <select name="sort">
+              <option value="all">전체</option>
+              <option value="overdue">연체일수</option>
+              <option value="bookNumber">책번호</option>
+              <option value="bookName">책제목</option>
+              <option value="memberNumber">회원번호</option>
+            </select>
+          </div>
+          <input type="text" placeholder="검색" required />
+          <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <table class="loans_list_table overdue">
           <thead>
