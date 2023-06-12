@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script src="../assets/Data/book.js"></script>
+    <script src="/js/return.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/style.css" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbit&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header><a href="/index.html">안녕하세요 BIT 도서관입니다.</a></header>
@@ -51,7 +56,12 @@
                       required
                     />
                     <span></span>
-                    <input type="submit" id="book-submit" value="입력" />
+                    <input
+                      type="submit"
+                      id="book-submit"
+                      value="입력"
+                      onclick="pushtable(returnbook)"
+                    />
                     <input type="button" id="returnBook" value="반납" />
                   </form>
                 </div>
@@ -77,7 +87,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <!-- <tr>
                       <td>1</td>
                       <td>
                         <img
@@ -137,7 +147,7 @@
                           />
                         </a>
                       </td>
-                    </tr>
+                    </tr> -->
                   </tbody>
                 </table>
               </div>
@@ -160,7 +170,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <!-- <tr>
                         <td>234789</td>
                         <td>SQL 튜닝</td>
                         <td>송윤서</td>
@@ -177,7 +187,7 @@
                         <td>엘라스틱서치 실무 가이드</td>
                         <td>권택환, 김동우, 김홍래, 박진현, 최용호</td>
                         <td>2023-06-09</td>
-                      </tr>
+                      </tr> -->
                     </tbody>
                   </table>
                 </form>
