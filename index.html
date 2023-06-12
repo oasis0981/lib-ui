@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbit&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>안녕하세요 BIT 도서관입니다.</header>
@@ -19,18 +21,21 @@
       </div>
 
       <div class="contents">
-        <p class="mainNotice">
-          회원별 조회를 위해서는 아래에 회원번호를 입력하세요.
-        </p>
-        <div class="mainHeader">
-          <div class="inputContainer">
-            <input type="text" class="inputUserNumber" required />
-            <label>회원번호</label>
-            <span></span>
+        <div class="mainTop">
+          <p class="mainNoticeTitle">📚 비트 도서관 도서관리 시스템</p>
+          <p class="mainNotice">
+            회원별 조회를 위해서는 아래에 회원번호를 입력하세요.
+          </p>
+          <div class="mainHeader">
+            <div class="inputContainer">
+              <input type="text" class="inputUserNumber" required />
+              <label>회원번호</label>
+              <span></span>
+            </div>
+            <a href="/pages/bookStatus.html"
+              ><button class="w-btn w-btn-green">조회</button></a
+            >
           </div>
-          <a href="/pages/bookStatus.html"
-            ><button class="w-btn w-btn-green">조회</button></a
-          >
         </div>
         <div class="libInfo">
           <img src="assets/images/chart.png" />
