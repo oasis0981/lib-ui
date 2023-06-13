@@ -8,7 +8,7 @@ function renderTable(lateBooks) {
                     <td> <img src = "${iterator.bookImg}" style="width: 8vw; min-width: 10px"> </td>
                     <td>${iterator.bookTitle}</td>
                     <td>${iterator.due}</td>
-                    <td>${iterator.overdue}</td>
+                    <td style="font-weight: bold;">${iterator.overdue}일</td>
                     <td>${iterator.userNum}</td>
                 </tr>
             `);
