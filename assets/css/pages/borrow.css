@@ -64,6 +64,10 @@ td {
 
 .bookSubmit {
     background-color: #009879;
+
+    /* 대출 불가능일 때 막아 놓을거 */
+    /* background-color: #aaaaaa; */
+
     border: none;
     color: white;
     padding: 12px 24px;
@@ -84,6 +88,8 @@ td {
 
 .borrowBook {
     background-color: #cf3910;
+    /* 대출 불가능일 때 막아 놓을거 */
+    /* background-color: #aaaaaa; */
     border: none;
     color: white;
     padding: 12px 24px;
