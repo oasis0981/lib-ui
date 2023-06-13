@@ -18,24 +18,24 @@ let borrowedBookJson = {
     author: "신용권, 임경균 저",
     returnDue: "2023-06-15",
   },
-  2: {
-    bookId: 2,
-    bookNum: "9788966262586",
-    bookTitle: "코드로 배우는 스프링부트 웹프로젝트",
-    author: "구멍가게 코딩단 저",
-    returnDue: "2023-06-15",
-  },
-  3: {
-    bookId: 3,
-    bookNum: "9788966262586",
-    bookTitle: "업무에서 바로 쓰는 SQL튜닝",
-    author: "양바른",
-    returnDue: "2023-06-15",
-  },
+  // 2: {
+  //   bookId: 2,
+  //   bookNum: "9788966262586",
+  //   bookTitle: "코드로 배우는 스프링부트 웹프로젝트",
+  //   author: "구멍가게 코딩단 저",
+  //   returnDue: "2023-06-15",
+  // },
+  // 3: {
+  //   bookId: 3,
+  //   bookNum: "9788966262586",
+  //   bookTitle: "업무에서 바로 쓰는 SQL튜닝",
+  //   author: "양바른",
+  //   returnDue: "2023-06-15",
+  // },
 };
 
-const borrowBookTable = document.querySelector(".bookListTable tbody");
-document.addEventListener("DOMContentLoaded", getBorrowBookList);
+// const borrowBookTable = document.querySelector(".bookListTable tbody");
+// document.addEventListener("DOMContentLoaded", getBorrowBookList);
 
 function getBorrowBookList() {
   let borrowBookContent = "";
@@ -59,13 +59,14 @@ function getBorrowBookList() {
     `;
   }
 
-  borrowBookTable.innerHTML = borrowBookContent;
+  document.querySelector(".bookListTable tbody").innerHTML = borrowBookContent;
 }
 
-const borrowedBookTable = document.querySelector(".loanBookTable tbody");
-document.addEventListener("DOMContentLoaded", getBorrowedBookList);
+// document.addEventListener("DOMContentLoaded", getBorrowedBookList);
 
 function getBorrowedBookList() {
+  // 왼쪽 표에 빈 문자열 넣어주기
+  document.querySelector(".bookListTable tbody").innerHTML = null;
   let borrowedBookContent = "";
   for (let key in borrowedBookJson) {
     borrowedBookContent += `
@@ -77,5 +78,12 @@ function getBorrowedBookList() {
     </tr>
     `;
   }
-  borrowedBookTable.innerHTML = borrowedBookContent;
+  document.querySelector(".loanBookTable tbody").innerHTML =
+    borrowedBookContent;
 }
+
+// document.addEventListener("DOMContentLoaded", cancelBorrow);
+
+// function addContent() {
+//   getBorrowBookList();
+// }
