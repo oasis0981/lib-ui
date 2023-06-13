@@ -73,7 +73,7 @@ function getBorrowedBookList() {
       <td>${borrowedBookJson[key].bookNum}</td>
       <td>${borrowedBookJson[key].bookTitle}</td>
       <td>${borrowedBookJson[key].author}</td>
-      <td>${borrowedBookJson[key].bookTitle}</td>
+      <td>${borrowedBookJson[key].returnDue}</td>
     </tr>
     `;
   }
