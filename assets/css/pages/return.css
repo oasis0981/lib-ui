@@ -1,26 +1,20 @@
-table{
+table {
   text-align: center;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   border-spacing: 0cm;
-  }
-.retrunStack{
-  border-spacing: 0cm;
 }
-#borrowStat{
+.retrunStack {
   border-spacing: 0cm;
-}
-tbody{
   width: 100%;
-  
+}
+#borrowStat {
+  border-spacing: 0cm;
 }
 #loanForm {
   margin-bottom: 20px;
   margin-right: 30px;
   width: 60%;
   float: left;
-}
-form {
-  display: flex;
 }
 #content {
   display: flex;
@@ -87,12 +81,12 @@ td {
   width: 100px;
   height: auto;
 }
-#cancle{
+#cancle {
   width: 30px;
   display: block;
   margin: 0 auto;
 }
-#bookReturn{
+#bookReturn {
   margin-bottom: 10px;
 }
 
@@ -104,7 +98,10 @@ td {
   background-color: #006752;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
-#book-number:focus {
+#book-number5:focus {
   outline: none;
   border-bottom-color: #009879;
+}
+.retrunStack {
+  width: 100%;
 }
