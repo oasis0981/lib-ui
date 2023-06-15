@@ -77,38 +77,3 @@ let book = [
     available: false,
   },
 ];
-let returnbook = [
-  {
-    bookId: 1,
-    isbn: "9788966262586",
-    title: "파이썬 머신러닝 완벽 가이드",
-    author: "권철민",
-    publisher: "위키북스",
-    publicationDate: "2019-01-03",
-    language: "한국어",
-    pages: 648,
-    available: false,
-  },
-  {
-    bookId: 2,
-    isbn: "9788966263163",
-    title: "파이썬으로 웹 크롤러 만들기",
-    author: "한요셉",
-    publisher: "한빛미디어",
-    publicationDate: "2018-03-05",
-    language: "한국어",
-    pages: 352,
-    available: true,
-  },
-  {
-    bookId: 3,
-    isbn: "9788966265716",
-    title: "파이썬으로 데이터 주무르기 실습",
-    author: "민형기",
-    publisher: "비제이퍼블릭",
-    publicationDate: "2018-08-01",
-    language: "한국어",
-    pages: 352,
-    available: false,
-  },
-];

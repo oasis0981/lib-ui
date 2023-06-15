@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <script></script>
+  <script src="/js/BorrowBooks.js"></script>
   <body>
     <header><a href="/index.html">안녕하세요 BIT 도서관입니다.</a></header>
     <div class="body">
@@ -54,49 +54,67 @@
                       placeholder="도서번호 입력 란"
                       required
                     />
-                    <input type="submit" class="bookSubmit" value="입력" />
-                    <input type="button" class="borrowBook" value="대출" />
+                    <input
+                      type="submit"
+                      class="bookSubmit"
+                      value="입력"
+                      onclick="getBorrowBookList()"
+                    />
+                    <input
+                      type="button"
+                      class="borrowBook"
+                      value="대출"
+                      onclick="getBorrowedBookList()"
+                    />
                   </form>
                 </div>
-                <!-- <table class="bookListTable">
-                <colgroup>
-                  <col style="width: 8%" />
-                  <col style="width: 11%" />
-                  <col style="width: 30%" />
-                  <col style="width: 10%" />
-                  <col style="width: 10%" />
-                  <col style="width: 15%" />
-                  <col style="width: 8%" />
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th>번호</th>
-                    <th>도서</th>
-                    <th>도서 이름</th>
-                    <th>저자</th>
-                    <th>출판사</th>
-                    <th>잔여수량</th>
-                    <th>취소</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>1</td>
-                    <td>
-                      <img class="bookImg" src="/assets/images/이것이 자바다.jpg" alt="">
-                    </td>
-                    <td>이것이 자바다</td>
-                    <td>신용권, 임경균 저</td>
-                    <td>한빛미디어</td>
-                    <td>수량 : 2</td>
-                    <td>
-                      <a href="#">
-                        <img class="cancleImg" src="/assets/images/취소.png" alt="이것이 자바다!" />
-                      </a>
-                    </td>
-                  </tr>
-                </tbody>
-              </table> -->
+                <table class="bookListTable">
+                  <colgroup>
+                    <col style="width: 8%" />
+                    <col style="width: 11%" />
+                    <col style="width: 30%" />
+                    <col style="width: 10%" />
+                    <col style="width: 10%" />
+                    <col style="width: 15%" />
+                    <col style="width: 8%" />
+                  </colgroup>
+                  <thead>
+                    <tr>
+                      <th>번호</th>
+                      <th>도서</th>
+                      <th>도서 이름</th>
+                      <th>저자</th>
+                      <th>출판사</th>
+                      <th>잔여수량</th>
+                      <th>취소</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <!-- <tr>
+                      <td>1</td>
+                      <td>
+                        <img
+                          class="bookImg"
+                          src="/assets/images/이것이 자바다.jpg"
+                          alt=""
+                        />
+                      </td>
+                      <td>이것이 자바다</td>
+                      <td>신용권, 임경균 저</td>
+                      <td>한빛미디어</td>
+                      <td>수량 : 2</td>
+                      <td>
+                        <a href="#">
+                          <img
+                            class="cancleImg"
+                            src="/assets/images/취소.png"
+                            alt="이것이 자바다!"
+                          />
+                        </a>
+                      </td>
+                    </tr> -->
+                  </tbody>
+                </table>
               </div>
 
               <div class="BorrowStatus">
@@ -118,7 +136,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
+                      <!-- <tr>
                         <td>123457</td>
                         <td>SQL 쿡북</td>
                         <td>엔서니 몰리나로, 로버트 더그래프</td>
@@ -135,7 +153,7 @@
                         <td>이것이 자바다</td>
                         <td>신용권, 임경균 저</td>
                         <td>2023-06-15</td>
-                      </tr>
+                      </tr> -->
                     </tbody>
                   </table>
                 </form>
