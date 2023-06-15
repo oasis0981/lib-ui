@@ -12,7 +12,7 @@
       rel="stylesheet"
     />
   </head>
-  <script></script>
+  <script src="/js/BorrowBooks.js"></script>
   <body>
     <header><a href="/index.html">안녕하세요 BIT 도서관입니다.</a></header>
     <div class="body">
@@ -54,8 +54,18 @@
                       placeholder="도서번호 입력 란"
                       required
                     />
-                    <input type="submit" class="bookSubmit" value="입력" />
-                    <input type="button" class="borrowBook" value="대출" />
+                    <input
+                      type="submit"
+                      class="bookSubmit"
+                      value="입력"
+                      onclick="getBorrowBookList()"
+                    />
+                    <input
+                      type="button"
+                      class="borrowBook"
+                      value="대출"
+                      onclick="getBorrowedBookList()"
+                    />
                   </form>
                 </div>
                 <table class="bookListTable">
@@ -153,6 +163,5 @@
         </div>
       </div>
     </div>
-    <script src="/js/BorrowBooks.js"></script>
   </body>
 </html>

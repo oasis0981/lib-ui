@@ -10,7 +10,7 @@ function pushtable(book) {
     let overdueText = ""; // 연체 텍스트 초기화
     let color = ""; // 텍스트 색상 초기화
     if (dayDiff >= 14) {
-      overdueText = ` 연체 (${dayDiff}일)`; // 연체 텍스트 설정
+      overdueText = ` 연체(${dayDiff}일)`; // 연체 텍스트 설정
       color = "red"; // 텍스트 색상을 빨간색으로 변경
     }
 
@@ -21,7 +21,7 @@ function pushtable(book) {
                     <td>${iterator.title}</td>
                     <td>${iterator.author}</td>
                     <td>${iterator.publisher}</td>
-                    <td style = " color = ${color}">${iterator.returnDate}${overdueText}</td>
+                    <td style = " color :${color};">${iterator.returnDate}${overdueText}</td>
                     <td>
                         <a href="#">
                           <img
@@ -35,4 +35,18 @@ function pushtable(book) {
             `);
   }
   document.querySelector(".retrunStack > tbody").innerHTML = tbodyData.join("");
+}
+function returnBook1(book) {
+  let tbodyData = [];
+  document.querySelector(".retrunStack > tbody").innerHTML = tbodyData.join("");
+  for (const iterator of book) {
+    tbodyData.push(`<tr>
+                    <td>${iterator.bookId}</td>
+                    <td>${iterator.title}</td>
+                    <td>${iterator.author}</td>
+                    <td>${iterator.returnDate}</td>
+                    </tr>
+                    `);
+  }
+  document.querySelector(".borrowStat > tbody").innerHTML = tbodyData.join("");
 }

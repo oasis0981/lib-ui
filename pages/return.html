@@ -62,7 +62,12 @@
                       value="입력"
                       onclick="pushtable(returnbook)"
                     />
-                    <input type="button" id="returnBook" value="반납" />
+                    <input
+                      type="button"
+                      id="returnBook"
+                      value="반납"
+                      onclick="returnBook1(returnbook2)"
+                    />
                   </form>
                 </div>
                 <table class="retrunStack">
@@ -154,7 +159,7 @@
               <div id="loan-status">
                 <h2>반납 현황</h2>
                 <form>
-                  <table id="borrowStat">
+                  <table class="borrowStat">
                     <colgroup>
                       <col style="width: 94px" />
                       <col style="width: 208px" />
