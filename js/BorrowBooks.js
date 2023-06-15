@@ -1,6 +1,5 @@
 function getBorrowBookList() {
   let tbodyData = [];
-  document.querySelector(".loanBookTable tbody").innerHTML = null;
 
   $.ajax({
     url: "borrowBook.json", // JSON 파일의 경로 또는 URL
