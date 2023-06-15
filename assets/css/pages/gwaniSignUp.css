@@ -1,0 +1,19 @@
+#container .register p {
+    margin: 0;
+}
+
+
+.register form div {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.register form div label,
+.register form div p {
+    width: 100px;
+}
+
+.register form div #userIdCheckBtn {
+    margin-left: 10px;
+}
