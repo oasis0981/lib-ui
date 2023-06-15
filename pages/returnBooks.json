@@ -2,40 +2,40 @@
   {
     "bookId": 1,
     "isbn": "9788966262586",
-    "title": "파이썬 머신러닝 완벽 가이드",
+    "title": "이것이 자바다!",
     "picture": "/assets/images/이것이 자바다.jpg",
     "author": "권철민",
     "publisher": "위키북스",
     "publicationDate": "2019-01-03",
     "language": "한국어",
     "pages": 648,
-    "returnDate": "2021-05-01",
+    "returnDate": "2023-06-01",
     "available": false
   },
   {
     "bookId": 2,
     "isbn": "9788966263163",
-    "title": "파이썬으로 웹 크롤러 만들기",
+    "title": "코드로 배우는 스프링부트 웹 프로젝트",
     "author": "한요셉",
-    "picture": "/assets/images/이것이 자바다.jpg",
+    "picture": "/assets/images/코드로 배우는 스프링부트 웹프로젝트.jpg",
     "publisher": "한빛미디어",
     "publicationDate": "2018-03-05",
     "language": "한국어",
     "pages": 352,
-    "returnDate": "2021-05-01",
+    "returnDate": "2023-05-01",
     "available": true
   },
   {
     "bookId": 3,
     "isbn": "9788966265716",
-    "title": "파이썬으로 데이터 주무르기 실습",
+    "title": "SQL 튜닝",
     "author": "민형기",
-    "picture": "/assets/images/이것이 자바다.jpg",
+    "picture": "/assets/images/SQL튜닝.jpg",
     "publisher": "비제이퍼블릭",
     "publicationDate": "2018-08-01",
     "language": "한국어",
     "pages": 352,
-    "returnDate": "2021-05-01",
+    "returnDate": "2023-06-14",
     "available": false
   }
 ]
