@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="../assets/Data/book.js"></script>
     <script src="/js/return.js"></script>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Orbit&display=swap"
       rel="stylesheet"
     />
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   </head>
   <body>
     <header><a href="/index.html">안녕하세요 BIT 도서관입니다.</a></header>
@@ -60,13 +60,13 @@
                       type="submit"
                       id="book-submit"
                       value="입력"
-                      onclick="pushtable(returnbook)"
+                      onclick="pushtable()"
                     />
                     <input
                       type="button"
                       id="returnBook"
                       value="반납"
-                      onclick="returnBook1(returnbook2)"
+                      onclick="returnBook1()"
                     />
                   </form>
                 </div>
