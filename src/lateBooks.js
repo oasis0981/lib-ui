@@ -1,6 +1,4 @@
 function renderTable() {
-  let tbodyData = [];
-
   $.ajax({
     url: "lateBooks.json", // JSON 파일의 경로 또는 URL
     dataType: "json",

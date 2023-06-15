@@ -1,0 +1,29 @@
+[ 
+ {      
+        "borrowNo" : "1",  
+        "bookNo" : "1234",
+        "image" : "/assets/images/이것이 자바다.jpg",
+        "title" : "이것이 자바다",
+        "writer" : "신용권",
+        "period" : "2023-06-01 ~ 2023-06-08",
+        "late" : true
+    },
+{
+        "borrowNo" : "2", 
+        "bookNo" : "4532",
+        "image" : "/assets/images/코드로 배우는 스프링부트 웹프로젝트.jpg",
+        "title" : "코드로 배우는 스프링부트 웹프로젝트",
+        "writer" : "구멍가게 코딩단",
+        "period" : "2023-06-05 ~ 2023-06-12",
+        "late" : false
+    },
+{
+        "borrowNo" : "3", 
+        "bookNo" : "1782",
+        "image" : "/assets/images/sql튜닝.jpg",
+        "title" : "업무에서 바로 쓰는 SQL튜닝",
+        "writer" : "양바른",
+        "period" : "2023-06-05 ~ 2023-06-12",
+        "late" : false
+    }
+]
