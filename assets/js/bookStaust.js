@@ -57,5 +57,4 @@ function insertTableData() {
     row_2.appendChild(period1);
     tbody.appendChild(row_2);
     }
-
 }

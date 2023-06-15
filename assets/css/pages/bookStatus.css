@@ -1,3 +1,7 @@
 .overDue td {
     color: red;
 }
+
+.bookImage img{
+    width: 8vw;
+}

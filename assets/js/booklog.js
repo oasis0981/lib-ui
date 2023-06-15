@@ -22,7 +22,7 @@ const bookLogJson = {
         "author" : "라울-게이브리얼 우르마, 마리오 푸스코, 앨런 마이크로프트",
         "createAt" : "2022-04-23",
         "endedAt" : "2022-05-01"
-        
+
     },
     4 : {
         "bookNo" : 3333,
