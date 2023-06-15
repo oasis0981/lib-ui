@@ -141,6 +141,11 @@
   justify-content: space-between;
 }
 
+.libDataContainer > .libData :hover {
+  background-color: #bee2d6;
+  border-radius: 10px;
+}
+
 .libData .libDataTitle {
   padding: 5px 10px;
   margin: 0;
@@ -169,7 +174,7 @@
   font-weight: bold;
 }
 
-#mainDataContainer {
+.mainDataContainer {
   width: 50%;
   /* border: 1px solid #aaa; */
   margin: 1rem;
